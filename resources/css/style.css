@@ -1,0 +1,177 @@
+/* Universal Styles */
+
+html {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.site-content {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    border: 5px solid #46C67E;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+
+/*navigation*/
+
+.clearfix {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #46C67E;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+
+nav div {
+    display: flex;
+}
+
+nav img {
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    color: #494949;
+    font-size: 36px;
+    margin: 40px;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+    background-color: #2A2A2A;
+    /*make buttons round*/
+    border-radius: 10px;
+}
+
+div.menu {
+    padding: 1rem 0;
+    display: flex;
+}
+
+li a {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 8px #46C67E;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*main content*/
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #303030;
+    color: wheat;
+    margin: auto;
+    height: auto;
+    opacity: 0.95;
+    border-radius: 5px;
+}
+
+
+/*footer*/
+
+footer {
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    background-color: #46C67E;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #1C1C1C;
+    border: 2px solid #46C67E;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #1C1C1C;
+}
+
+
+/*************** 
+****************
+*@media queries*
+****************
+****************/
+
+@media only screen and (max-width: 953px) {
+    h1 {
+        display: none;
+    }
+    li {
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    a {
+        width: 100px;
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    nav {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    h1 {
+        display: none;
+    }
+    li {
+        display: none;
+    }
+    nav {
+        padding: 0px;
+    }
+    nav img {
+        height: 65px;
+        width: 65px;
+    }
+    nav div {
+        margin: 0 auto;
+    }
+}
